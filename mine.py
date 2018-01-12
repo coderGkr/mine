@@ -1,6 +1,6 @@
 import random
 import itertools
-
+import os
 #definition for itertools.product
 #-------------------------------------------------------------------
 # def product(*args, repeat=1):
@@ -69,6 +69,8 @@ class mine:
 play=mine()
 play.printboard()
 while True:
+
+	os.system('cls')
 	play.printboard()
 	#expect to be added
 	a,b=[int(x) for x in raw_input("\nEnter Input coordinates").split()]
